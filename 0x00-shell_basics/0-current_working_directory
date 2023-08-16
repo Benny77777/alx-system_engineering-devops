@@ -1,7 +1,4 @@
 #!/bin/bash
 
-# Get the absolute path of the current working directory
-cwd=$(dirname "$(readlink -f "$0")")
-
-# Print the absolute path
+cwd=$(dirname "$(readlink -f -- "$0")");
 echo "Current Working Directory: $cwd"
